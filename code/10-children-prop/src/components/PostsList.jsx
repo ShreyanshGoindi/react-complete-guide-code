@@ -1,13 +1,12 @@
-import { useState } from 'react';
-
-import Post from './Post';
-import NewPost from './NewPost';
-import Modal from './Modal';
-import classes from './PostsList.module.css';
+import { useState } from "react";
+import Post from "./Post";
+import NewPost from "./NewPost";
+import Modal from "./Modal";
+import classes from "./PostsList.module.css";
 
 function PostsList() {
-  const [enteredBody, setEnteredBody] = useState('');
-  const [enteredAuthor, setEnteredAuthor] = useState('');
+  const [enteredBody, setEnteredBody] = useState("");
+  const [enteredAuthor, setEnteredAuthor] = useState("");
 
   function bodyChangeHandler(event) {
     setEnteredBody(event.target.value);
